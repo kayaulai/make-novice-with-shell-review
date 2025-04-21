@@ -1,6 +1,6 @@
 ---
 title: Introduction to Pipelining and Shell Review
-teaching: 25
+teaching: 20
 exercises: 0
 ---
 
@@ -197,6 +197,17 @@ the suggested default of `newbook.txt`.
 Once our file is saved, we can use <kbd>Ctrl</kbd>\+<kbd>X</kbd> to quit the editor and
 return to the shell.
 
+`nano` doesn't leave any output on the screen after it exits,
+but `ls` now shows that we have created a file called `draft.txt`:
+
+```bash
+$ ls books
+```
+
+```output
+abyss.txt  isles.txt  last.txt  LICENSE_TEXTS.md  newbook.txt  sierra.txt
+```
+
 Now if you want to view your glorious creation any time,
 you can use the `head` command to see the beginning of
 the book:
@@ -210,9 +221,9 @@ It's not "publish or perish" any more,
 it's "share and thrive".
 ```
 
-
 Our book needs a more glorious filename than just `newbook.txt`. So we can go ahead
-and use the `mv` ('move') command to change its filename to `coolbook.txt`
+and use the `mv` ('move') command to change its filename to `coolbook.txt`:
+
 ```bash
 $ mv books/coolbook.txt books/newbook.txt
 ```
@@ -224,16 +235,7 @@ not the smartest idea, so let's delete it using the `rm` ('remove') command:
 $ rm books/newbook.txt
 ```
 
-`nano` doesn't leave any output on the screen after it exits,
-but `ls` now shows that we have created a file called `draft.txt`:
-
-```bash
-$ ls
-```
-
-```output
-draft.txt
-```
+## Counting words
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 

@@ -1,6 +1,6 @@
 ---
 title: Introduction
-teaching: 25
+teaching: 15
 exercises: 0
 ---
 
