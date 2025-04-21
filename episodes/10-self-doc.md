@@ -1,5 +1,5 @@
 ---
-title: Bonus: Self-Documenting Makefiles
+title: "BONUS: Self-Documenting Makefiles"
 teaching: 10
 exercises: 0
 ---
