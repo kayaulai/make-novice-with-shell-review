@@ -224,27 +224,6 @@ not the smartest idea, so let's delete it using the `rm` ('remove') command:
 $ rm books/newbook.txt
 ```
 
-
-## Control, Ctrl, or ^ Key
-
-The Control key is also called the 'Ctrl' key. There are various ways
-in which using the Control key may be described. For example, you may
-see an instruction to press the <kbd>Control</kbd> key and, while holding it down,
-press the <kbd>X</kbd> key, described as any of:
-
-- `Control-X`
-- `Control+X`
-- `Ctrl-X`
-- `Ctrl+X`
-- `^X`
-- `C-x`
-
-In nano, along the bottom of the screen you'll see `^G Get Help ^O WriteOut`.
-This means that you can use `Control-G` to get help and `Control-O` to save your
-file.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
 `nano` doesn't leave any output on the screen after it exits,
 but `ls` now shows that we have created a file called `draft.txt`:
 
@@ -255,8 +234,6 @@ $ ls
 ```output
 draft.txt
 ```
-
-
 
 ## Zipf's Law
 

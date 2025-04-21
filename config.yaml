@@ -60,15 +60,15 @@ contact: 'team@carpentries.org'
 # Order of episodes in your lesson
 episodes: 
 - 01-pipelining.md
-- 02-intro-make
+- 02-intro-make.md
 - 03-makefiles.md
 - 04-variables.md
 - 05-dependencies.md
 - 06-patterns.md
 - 07-variables.md
 - 08-functions.md
-- 09-self-doc.md
-- 10-conclusion.md
+- 09-conclusion.md
+- 10-self-doc.md
 
 # Information for Learners
 learners: 
