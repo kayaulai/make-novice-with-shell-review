@@ -1,6 +1,6 @@
 ---
-title: Introduction
-teaching: 25
+title: Motivating Make
+teaching: 15
 exercises: 0
 ---
 
@@ -189,7 +189,6 @@ Make's fundamental concepts are common across build tools.
 and very popular Make implementation. From now on, we will focus on it, and when we say
 Make, we mean GNU Make.
 
-[zipfs-law]: https://en.wikipedia.org/wiki/Zipf%27s_law
 [apache-ant]: https://ant.apache.org/
 [doit]: https://pydoit.org/
 [nmake]: https://docs.microsoft.com/en-us/cpp/build/reference/nmake-reference

@@ -28,24 +28,22 @@ You need to download some files to follow this lesson:
 
 ## Software
 
-You also need to have the following software installed on your computer to
-follow this lesson:
+You also need to have the  software installed on your computer to
+follow this lesson.
 
-## Install software
+### Install shell
 
 If you do not already have the shell software installed, you will need to
 [download and install][install_shell] it.
 
-## Open a new shell
+After installing the shell,
 
-After installing the software
-
-3. Open a terminal.
+1. Open a terminal.
   If you're not sure how to open a terminal on your operating system, see the instructions below.
-4. In the terminal type `cd` then press the <kbd>Return</kbd> key.
+2. In the terminal type `cd` then press the <kbd>Return</kbd> key.
   This step will make sure you start with your home folder as your working directory.
 
-In the lesson, you will find out how to access the data files in this folder.
+In the lesson, you will find out how to move to the current directory.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -134,7 +132,7 @@ you can run it by opening a terminal and typing `bash`.
 [xterm]: https://en.wikipedia.org/wiki/Xterm
 
 
-### GNU Make
+### Install GNU Make
 
 #### Linux
 
@@ -152,8 +150,8 @@ Check if you already have Make installed by typing `make -v` into a terminal.
 
 #### Windows
 
-Use the Software Carpentry
-[Windows installer](https://github.com/swcarpentry/windows-installer).
+Use the
+[Windows installer](https://gnuwin32.sourceforge.net/packages/make.htm).
 
 ### Python
 
@@ -161,6 +159,10 @@ Python2 or Python3, Numpy and Matplotlib are required.
 They can be installed separately, but the easiest approach is to install
 [Anaconda](https://www.anaconda.com/distribution/) which includes all of the
 necessary python software.
+
+### Integrated development environment
+
+[Positron](https://code.visualstudio.com/) or [VSCode](http://code.visualstudio.com/) are recommended for this lesson. You are also welcome to use JupyterLab or type directly in your terminal and editors like Notepad if you are familiar with those tools. 
 
 [zip-file]: files/make-lesson.zip
 
