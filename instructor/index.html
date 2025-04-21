@@ -209,7 +209,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="02-intro-make.html">2. Introduction</a>
+        <a href="02-intro-make.html">2. Motivating Make</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -396,16 +396,16 @@ Review</a>
 How can I interact with computer commands fully automatically?
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>00h 25m
+<span class="visually-hidden">Duration: </span>00h 20m
 </td>
 <td>
- 2. <a href="02-intro-make.html">Introduction</a>
+ 2. <a href="02-intro-make.html">Motivating Make</a>
 </td>
 <td>
 How can I make my results easier to reproduce?
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>00h 50m
+<span class="visually-hidden">Duration: </span>00h 35m
 </td>
 <td>
  3. <a href="03-makefiles.html">Makefiles</a>
@@ -414,7 +414,7 @@ How can I make my results easier to reproduce?
 How do I write a simple Makefile?
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>01h 30m
+<span class="visually-hidden">Duration: </span>01h 15m
 </td>
 <td>
  4. <a href="04-variables.html">Automatic Variables</a>
@@ -423,7 +423,7 @@ How do I write a simple Makefile?
 How can I abbreviate the rules in my Makefiles?
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>01h 45m
+<span class="visually-hidden">Duration: </span>01h 30m
 </td>
 <td>
  5. <a href="05-dependencies.html">Dependencies on Data and Code</a>
@@ -433,7 +433,7 @@ How can I write a Makefile to update things when my scripts have changed
 rather than my input files?
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>02h 05m
+<span class="visually-hidden">Duration: </span>01h 50m
 </td>
 <td>
  6. <a href="06-patterns.html">Pattern Rules</a>
@@ -442,7 +442,7 @@ rather than my input files?
 How can I define rules to operate on similar files?
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>02h 15m
+<span class="visually-hidden">Duration: </span>02h 00m
 </td>
 <td>
  7. <a href="07-variables.html">Variables</a>
@@ -451,7 +451,7 @@ How can I define rules to operate on similar files?
 How can I eliminate redundancy in my Makefiles?
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>02h 35m
+<span class="visually-hidden">Duration: </span>02h 20m
 </td>
 <td>
  8. <a href="08-functions.html">Functions</a>
@@ -460,7 +460,7 @@ How can I eliminate redundancy in my Makefiles?
 How <em>else</em> can I eliminate redundancy in my Makefiles?
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>03h 00m
+<span class="visually-hidden">Duration: </span>02h 45m
 </td>
 <td>
  9. <a href="09-conclusion.html">Conclusion</a>
@@ -469,7 +469,7 @@ How <em>else</em> can I eliminate redundancy in my Makefiles?
 What are the advantages and disadvantages of using tools like Make?
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>03h 35m
+<span class="visually-hidden">Duration: </span>03h 20m
 </td>
 <td>
 10. <a href="10-self-doc.html">BONUS: Self-Documenting Makefiles</a>
@@ -478,7 +478,7 @@ What are the advantages and disadvantages of using tools like Make?
 How should I document a Makefile?
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>03h 45m
+<span class="visually-hidden">Duration: </span>03h 30m
 </td>
 <td>
 Finish
@@ -500,21 +500,21 @@ access via your bash shell.</p></li>
 <ol start="6" style="list-style-type: decimal"><li>Change into the <code>make-lesson</code> directory:</li>
 </ol><pre class="source"><code>$ cd make-lesson</code></pre>
 </section><section><h2 class="section-heading" id="software">Software<a class="anchor" aria-label="anchor" href="#software"></a></h2>
-<hr class="half-width"><p>You also need to have the following software installed on your
-computer to follow this lesson:</p>
-</section><section><h2 class="section-heading" id="install-software">Install software<a class="anchor" aria-label="anchor" href="#install-software"></a></h2>
-<hr class="half-width"><p>If you do not already have the shell software installed, you will
+<hr class="half-width"><p>You also need to have the software installed on your computer to
+follow this lesson.</p>
+<div class="section level3">
+<h3 id="install-shell">Install shell<a class="anchor" aria-label="anchor" href="#install-shell"></a></h3>
+<p>If you do not already have the shell software installed, you will
 need to <a href="https://carpentries.github.io/workshop-template/install_instructions/#shell" class="external-link">download
 and install</a> it.</p>
-</section><section><h2 class="section-heading" id="open-a-new-shell">Open a new shell<a class="anchor" aria-label="anchor" href="#open-a-new-shell"></a></h2>
-<hr class="half-width"><p>After installing the software</p>
-<ol start="3" style="list-style-type: decimal"><li>Open a terminal. If you’re not sure how to open a terminal on your
+<p>After installing the shell,</p>
+<ol style="list-style-type: decimal"><li>Open a terminal. If you’re not sure how to open a terminal on your
 operating system, see the instructions below.</li>
 <li>In the terminal type <code>cd</code> then press the
 <kbd>Return</kbd> key. This step will make sure you start with your home
 folder as your working directory.</li>
-</ol><p>In the lesson, you will find out how to access the data files in this
-folder.</p>
+</ol><p>In the lesson, you will find out how to move to the current
+directory.</p>
 <div id="where-to-type-commands-how-to-open-a-new-shell" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -611,8 +611,9 @@ and typing <code>bash</code>.</p>
 </div>
 </div>
 </div>
+</div>
 <div class="section level3">
-<h3 id="gnu-make">GNU Make<a class="anchor" aria-label="anchor" href="#gnu-make"></a></h3>
+<h3 id="install-gnu-make">Install GNU Make<a class="anchor" aria-label="anchor" href="#install-gnu-make"></a></h3>
 <div class="section level4">
 <h4 id="linux-1">Linux<a class="anchor" aria-label="anchor" href="#linux-1"></a></h4>
 <p>Make is a standard tool on most Linux systems and should already be
@@ -629,7 +630,7 @@ terminal.</p>
 </div>
 <div class="section level4">
 <h4 id="windows-1">Windows<a class="anchor" aria-label="anchor" href="#windows-1"></a></h4>
-<p>Use the Software Carpentry <a href="https://github.com/swcarpentry/windows-installer" class="external-link">Windows
+<p>Use the <a href="https://gnuwin32.sourceforge.net/packages/make.htm" class="external-link">Windows
 installer</a>.</p>
 </div>
 </div>
@@ -638,6 +639,13 @@ installer</a>.</p>
 <p>Python2 or Python3, Numpy and Matplotlib are required. They can be
 installed separately, but the easiest approach is to install <a href="https://www.anaconda.com/distribution/" class="external-link">Anaconda</a> which
 includes all of the necessary python software.</p>
+</div>
+<div class="section level3">
+<h3 id="integrated-development-environment">Integrated development environment<a class="anchor" aria-label="anchor" href="#integrated-development-environment"></a></h3>
+<p><a href="https://code.visualstudio.com/" class="external-link">Positron</a> or <a href="http://code.visualstudio.com/" class="external-link">VSCode</a> are recommended for this
+lesson. You are also welcome to use JupyterLab or type directly in your
+terminal and editors like Notepad if you are familiar with those
+tools.</p>
 </div>
 </section></section></main><nav class="bottom-pagination mx-md-4" aria-label="Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link float-end" href="../instructor/01-pipelining.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>

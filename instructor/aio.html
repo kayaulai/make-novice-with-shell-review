@@ -248,7 +248,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="02-intro-make.html">2. Introduction</a>
+        <a href="02-intro-make.html">2. Motivating Make</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -414,7 +414,7 @@
 <p>Last updated on 2025-04-21 |
 
         <a href="https://github.com/swcarpentry/make-novice/edit/main/episodes/01-pipelining.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 25 minutes</p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 20 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -624,12 +624,25 @@ a name for the file that will contain our text. Press <kbd>Return</kbd>
 to accept the suggested default of <code>newbook.txt</code>.</p>
 <p>Once our file is saved, we can use <kbd>Ctrl</kbd>+<kbd>X</kbd> to
 quit the editor and return to the shell.</p>
-<p>Now if you want to view your glorious creation any time, you can use
-the <code>head</code> command to see the beginning of the book:</p>
+<p><code>nano</code> doesn’t leave any output on the screen after it
+exits, but <code>ls</code> now shows that we have created a file called
+<code>draft.txt</code>:</p>
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="ex">$</span> head books/newbook.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="ex">$</span> ls books</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>abyss.txt  isles.txt  last.txt  LICENSE_TEXTS.md  newbook.txt  sierra.txt</code></pre>
+</div>
+<p>Now if you want to view your glorious creation any time, you can use
+the <code>head</code> command to see the beginning of the book:</p>
+<div class="codewrapper sourceCode" id="cb13">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="ex">$</span> head books/newbook.txt</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -639,33 +652,24 @@ it's "share and thrive".</code></pre>
 </div>
 <p>Our book needs a more glorious filename than just
 <code>newbook.txt</code>. So we can go ahead and use the <code>mv</code>
-(‘move’) command to change its filename to <code>coolbook.txt</code></p>
-<div class="codewrapper sourceCode" id="cb13">
+(‘move’) command to change its filename to
+<code>coolbook.txt</code>:</p>
+<div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="ex">$</span> mv books/coolbook.txt books/newbook.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="ex">$</span> mv books/coolbook.txt books/newbook.txt</span></code></pre>
 </div>
 <p>On second thoughts, adding our own book to the corpus (however short)
 was probably not the smartest idea, so let’s delete it using the
 <code>rm</code> (‘remove’) command:</p>
-<div class="codewrapper sourceCode" id="cb14">
+<div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="ex">$</span> rm books/newbook.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="ex">$</span> rm books/newbook.txt</span></code></pre>
 </div>
-<p><code>nano</code> doesn’t leave any output on the screen after it
-exits, but <code>ls</code> now shows that we have created a file called
-<code>draft.txt</code>:</p>
-<div class="codewrapper sourceCode" id="cb15">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="ex">$</span> ls</span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code><span><span class="va">draft.txt</span></span></code></pre>
-</div>
+</section><section><h2 class="section-heading" id="counting-words">Counting words<a class="anchor" aria-label="anchor" href="#counting-words"></a>
+</h2>
+<hr class="half-width">
 <div id="zipfs-law" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -674,8 +678,7 @@ exits, but <code>ls</code> now shows that we have created a file called
 <h3 class="callout-title">Zipf’s Law</h3>
 <div class="callout-content">
 <p>The most frequently-occurring word occurs approximately twice as
-often as the second most frequent word. This is [Zipf’s
-Law][zipfs-law].</p>
+often as the second most frequent word. This is <a href="https://en.wikipedia.org/wiki/Zipf%27s_law" class="external-link">Zipf’s Law</a>.</p>
 </div>
 </div>
 </div>
@@ -829,12 +832,12 @@ from the command line.</li>
 </div>
 </div>
 </div>
-</section></section><section id="aio-02-intro-make"><p>Content from <a href="02-intro-make.html">Introduction</a></p>
+</section></section><section id="aio-02-intro-make"><p>Content from <a href="02-intro-make.html">Motivating Make</a></p>
 <hr>
 <p>Last updated on 2025-04-21 |
 
         <a href="https://github.com/swcarpentry/make-novice/edit/main/episodes/02-intro-make.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 25 minutes</p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -2253,7 +2256,7 @@ using <code>ZIPF_SRC</code> as the variable name.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p><a href="../files/code/06-variables-challenge/Makefile">This
 Makefile</a> contains a solution to this challenge.</p>
