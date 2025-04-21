@@ -150,8 +150,8 @@ Check if you already have Make installed by typing `make -v` into a terminal.
 
 #### Windows
 
-Use the Software Carpentry
-[Windows installer](https://github.com/swcarpentry/windows-installer).
+Use the
+[Windows installer](https://gnuwin32.sourceforge.net/packages/make.htm).
 
 ### Python
 

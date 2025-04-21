@@ -387,4 +387,5 @@ So we're not too far off from Zipf's law.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+[zipfs-law]: https://en.wikipedia.org/wiki/Zipf%27s_law
 
