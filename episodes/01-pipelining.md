@@ -123,7 +123,7 @@ Desktop     Downloads   Movies      Pictures
 Documents   Library     Music       Public
 ```
 
-If you saw something like the above, output, then 
+If you saw something like the above output, then 
 you are in the root directory of your computer.
 We want to navigate to `make-lesson` instead.
 So let's use the command `cd`.
@@ -137,7 +137,7 @@ In other words it changes the shell's settings for what directory we are in.
 The `cd` command is akin to double-clicking a folder in a graphical interface
 to get into that folder.
 
-Let's try this out! For example, on my Windows computer, the typical path to the 
+Let's try this out! For example, on a Windows computer, the typical path to the 
 directory looks like this:
 
 ```bash
@@ -147,17 +147,17 @@ $ cd C:/Users/Your_name/Documents/make-lesson
 Note that if you use Windows, you should ensure that
 you use forward slashes instead of
 backward slashes, which are the normal slash in Windows.
-If you use mac,
+If you use Mac,
 then you normally use forward slashes anyways.
 
 These commands will move us to the right directory.
 You will notice that `cd` doesn't print anything. This is normal.
 Many shell commands will not output anything to the screen when successfully executed.
 But if we run `pwd` after it, we can see that we are now
-in `/Users/nelle/Desktop/shell-lesson-data/exercise-data`.
+in the right directory.
 
 If we run `ls -F` without arguments now,
-it lists the contents of `/Users/nelle/Desktop/shell-lesson-data/exercise-data`,
+it lists the contents of our directory for this workshop,
 because that's where we now are:
 
 ```bash
@@ -225,14 +225,14 @@ Our book needs a more glorious filename than just `newbook.txt`. So we can go ah
 and use the `mv` ('move') command to change its filename to `coolbook.txt`:
 
 ```bash
-$ mv books/coolbook.txt books/newbook.txt
+$ mv books/newbook.txt books/coolbook.txt
 ```
 
 On second thoughts, adding our own book to the corpus (however short) was probably
 not the smartest idea, so let's delete it using the `rm` ('remove') command:
 
 ```bash
-$ rm books/newbook.txt
+$ rm books/coolbook.txt
 ```
 
 ## Counting words
