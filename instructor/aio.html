@@ -411,7 +411,7 @@
         
 <section id="aio-01-pipelining"><p>Content from <a href="01-pipelining.html">Introduction to Pipelining and Shell Review</a></p>
 <hr>
-<p>Last updated on 2025-04-21 |
+<p>Last updated on 2025-06-29 |
 
         <a href="https://github.com/swcarpentry/make-novice/edit/main/episodes/01-pipelining.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 20 minutes</p>
@@ -553,7 +553,7 @@ directory:</p>
 <pre class="output" tabindex="0"><code>Desktop     Downloads   Movies      Pictures
 Documents   Library     Music       Public</code></pre>
 </div>
-<p>If you saw something like the above, output, then you are in the root
+<p>If you saw something like the above output, then you are in the root
 directory of your computer. We want to navigate to
 <code>make-lesson</code> instead. So let’s use the command
 <code>cd</code>. The format is <code>cd</code> followed by a directory
@@ -563,7 +563,7 @@ directory; it changes the shell’s current working directory. In other
 words it changes the shell’s settings for what directory we are in. The
 <code>cd</code> command is akin to double-clicking a folder in a
 graphical interface to get into that folder.</p>
-<p>Let’s try this out! For example, on my Windows computer, the typical
+<p>Let’s try this out! For example, on a Windows computer, the typical
 path to the directory looks like this:</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -572,18 +572,16 @@ path to the directory looks like this:</p>
 </div>
 <p>Note that if you use Windows, you should ensure that you use forward
 slashes instead of backward slashes, which are the normal slash in
-Windows. If you use mac, then you normally use forward slashes
+Windows. If you use Mac, then you normally use forward slashes
 anyways.</p>
 <p>These commands will move us to the right directory. You will notice
 that <code>cd</code> doesn’t print anything. This is normal. Many shell
 commands will not output anything to the screen when successfully
 executed. But if we run <code>pwd</code> after it, we can see that we
-are now in
-<code>/Users/nelle/Desktop/shell-lesson-data/exercise-data</code>.</p>
+are now in the right directory.</p>
 <p>If we run <code>ls -F</code> without arguments now, it lists the
-contents of
-<code>/Users/nelle/Desktop/shell-lesson-data/exercise-data</code>,
-because that’s where we now are:</p>
+contents of our directory for this workshop, because that’s where we now
+are:</p>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -657,7 +655,7 @@ it's "share and thrive".</code></pre>
 <div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="ex">$</span> mv books/coolbook.txt books/newbook.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="ex">$</span> mv books/newbook.txt books/coolbook.txt</span></code></pre>
 </div>
 <p>On second thoughts, adding our own book to the corpus (however short)
 was probably not the smartest idea, so let’s delete it using the
@@ -665,7 +663,7 @@ was probably not the smartest idea, so let’s delete it using the
 <div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="ex">$</span> rm books/newbook.txt</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="ex">$</span> rm books/coolbook.txt</span></code></pre>
 </div>
 </section><section><h2 class="section-heading" id="counting-words">Counting words<a class="anchor" aria-label="anchor" href="#counting-words"></a>
 </h2>
@@ -703,12 +701,12 @@ working with:</p>
 |- testzipf.py</code></pre>
 </div>
 <p>The first step is to count the frequency of each word in a book. For
-this purpose we will use a python script <code>countwords.py</code>. We
-will run this python on the command line, rather than running it inside
-an environment like JupyterLab or VSCode. This is achieved by writing
-the <code>if __name__ == '__main__':</code> statement inside Python
-scripts; for example, <code>countwords.py</code> has the following code
-at the bottom:</p>
+this purpose we will use a Python script <code>countwords.py</code>. We
+will run this Python script on the command line, rather than running it
+inside an environment like JupyterLab or VSCode. This is achieved by
+writing the <code>if __name__ == '__main__':</code> statement inside
+Python scripts; for example, <code>countwords.py</code> has the
+following code at the bottom:</p>
 <div class="codewrapper sourceCode" id="cb18">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1488,7 +1486,7 @@ target.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>See <a href="../files/code/02-makefile-challenge/Makefile">this file</a>
 for a solution.</p>
@@ -1659,7 +1657,7 @@ python testzipf.py isles.dat abyss.dat last.dat &gt; results.txt</code></pre>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p><code>4.</code> Only <code>results.txt</code> recreated.</p>
 <p>The rules for <code>*.dat</code> are not executed because their
@@ -1710,7 +1708,7 @@ Makefile immediately before the challenge.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>See <a href="../files/code/03-variables-challenge/Makefile">this
 file</a> for a solution to this challenge.</p>
@@ -2256,7 +2254,7 @@ using <code>ZIPF_SRC</code> as the variable name.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p><a href="../files/code/06-variables-challenge/Makefile">This
 Makefile</a> contains a solution to this challenge.</p>
@@ -2675,7 +2673,7 @@ first target it finds in the Makefile, in this case your new
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p><a href="../files/code/09-conclusion-challenge-1/Makefile">This
 Makefile</a> and <a href="../files/code/09-conclusion-challenge-1/config.mk">this
@@ -2743,7 +2741,7 @@ when <code>make variables</code> is called.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p><a href="../files/code/09-conclusion-challenge-2/Makefile">This
 Makefile</a> and <a href="../files/code/09-conclusion-challenge-2/config.mk">this
@@ -2769,7 +2767,7 @@ to our archive of code, data, plots and Zipf summary table?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Our code files (<code>countwords.py</code>,
 <code>plotcounts.py</code>, <code>testzipf.py</code>) implement the
@@ -2804,7 +2802,7 @@ plots and summary table into it?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>A directory’s timestamp is not automatically updated when files are
 copied into it. If the code, data, plots, and summary table are updated
@@ -3030,8 +3028,8 @@ target to extract and format them.</li>
   "url": "https://swcarpentry.github.io/make-novice/instructor/aio.html",
   "identifier": "https://swcarpentry.github.io/make-novice/instructor/aio.html",
   "dateCreated": "2015-06-18",
-  "dateModified": "2025-06-24",
-  "datePublished": "2025-06-24"
+  "dateModified": "2025-06-29",
+  "datePublished": "2025-06-29"
 }
 
   </script><script>
