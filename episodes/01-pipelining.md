@@ -268,8 +268,8 @@ Our directory has the Python scripts and data files we will be working with:
 ```
 
 The first step is to count the frequency of each word in a book.
-For this purpose we will use a python script `countwords.py`.
-We will run this python on the command line, rather than running it inside
+For this purpose we will use a Python script `countwords.py`.
+We will run this Python script on the command line, rather than running it inside
 an environment like JupyterLab or VSCode.
 This is achieved by writing the `if __name__ == '__main__':` statement
 inside Python scripts; for example, `countwords.py` has the following code
